@@ -1,0 +1,73 @@
+{
+  "system_info": {
+    "project": "Hybrid AI–NWP Multi-Model Forecast Blending System",
+    "dataset": "Historical Verification Replay Dataset",
+    "data_status": "demo_replay",
+    "notice": "DEMO/REPLAY VERIFICATION: Deterministic historical observation vs forecast evaluation stream. Not live operational NCMRWF data."
+  },
+  "records": [
+    {"locationId": "DELHI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ncmrwf_ncum", "forecast": 15.0, "observed": 14.0, "dataStatus": "demo_replay"},
+    {"locationId": "DELHI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ncmrwf_neps", "forecast": 17.5, "observed": 14.0, "dataStatus": "demo_replay"},
+    {"locationId": "DELHI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ai_graphcast", "forecast": 12.0, "observed": 14.0, "dataStatus": "demo_replay"},
+
+    {"locationId": "DELHI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-24T12:00:00Z", "modelId": "ncmrwf_ncum", "forecast": 22.0, "observed": 20.0, "dataStatus": "demo_replay"},
+    {"locationId": "DELHI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-24T12:00:00Z", "modelId": "ncmrwf_neps", "forecast": 25.0, "observed": 20.0, "dataStatus": "demo_replay"},
+    {"locationId": "DELHI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-24T12:00:00Z", "modelId": "ai_graphcast", "forecast": 18.0, "observed": 20.0, "dataStatus": "demo_replay"},
+
+    {"locationId": "DELHI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-23T12:00:00Z", "modelId": "ncmrwf_ncum", "forecast": 8.0, "observed": 8.5, "dataStatus": "demo_replay"},
+    {"locationId": "DELHI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-23T12:00:00Z", "modelId": "ncmrwf_neps", "forecast": 11.0, "observed": 8.5, "dataStatus": "demo_replay"},
+    {"locationId": "DELHI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-23T12:00:00Z", "modelId": "ai_graphcast", "forecast": 6.5, "observed": 8.5, "dataStatus": "demo_replay"},
+
+    {"locationId": "DELHI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-22T12:00:00Z", "modelId": "ncmrwf_ncum", "forecast": 0.0, "observed": 0.0, "dataStatus": "demo_replay"},
+    {"locationId": "DELHI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-22T12:00:00Z", "modelId": "ncmrwf_neps", "forecast": 2.0, "observed": 0.0, "dataStatus": "demo_replay"},
+    {"locationId": "DELHI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-22T12:00:00Z", "modelId": "ai_graphcast", "forecast": 0.5, "observed": 0.0, "dataStatus": "demo_replay"},
+
+    {"locationId": "DELHI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-21T12:00:00Z", "modelId": "ncmrwf_ncum", "forecast": 30.0, "observed": 28.0, "dataStatus": "demo_replay"},
+    {"locationId": "DELHI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-21T12:00:00Z", "modelId": "ncmrwf_neps", "forecast": 34.0, "observed": 28.0, "dataStatus": "demo_replay"},
+    {"locationId": "DELHI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-21T12:00:00Z", "modelId": "ai_graphcast", "forecast": 25.0, "observed": 28.0, "dataStatus": "demo_replay"},
+
+    {"locationId": "DELHI", "variableId": "temperature", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ncmrwf_ncum", "forecast": 32.5, "observed": 32.0, "dataStatus": "demo_replay"},
+    {"locationId": "DELHI", "variableId": "temperature", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ncmrwf_neps", "forecast": 31.8, "observed": 32.0, "dataStatus": "demo_replay"},
+    {"locationId": "DELHI", "variableId": "temperature", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ai_graphcast", "forecast": 32.2, "observed": 32.0, "dataStatus": "demo_replay"},
+
+    {"locationId": "DELHI", "variableId": "temperature", "leadHours": 24, "validTime": "2026-09-24T12:00:00Z", "modelId": "ncmrwf_ncum", "forecast": 33.8, "observed": 33.0, "dataStatus": "demo_replay"},
+    {"locationId": "DELHI", "variableId": "temperature", "leadHours": 24, "validTime": "2026-09-24T12:00:00Z", "modelId": "ncmrwf_neps", "forecast": 32.6, "observed": 33.0, "dataStatus": "demo_replay"},
+    {"locationId": "DELHI", "variableId": "temperature", "leadHours": 24, "validTime": "2026-09-24T12:00:00Z", "modelId": "ai_graphcast", "forecast": 33.1, "observed": 33.0, "dataStatus": "demo_replay"},
+
+    {"locationId": "DELHI", "variableId": "temperature", "leadHours": 24, "validTime": "2026-09-23T12:00:00Z", "modelId": "ncmrwf_ncum", "forecast": 34.5, "observed": 34.0, "dataStatus": "demo_replay"},
+    {"locationId": "DELHI", "variableId": "temperature", "leadHours": 24, "validTime": "2026-09-23T12:00:00Z", "modelId": "ncmrwf_neps", "forecast": 33.5, "observed": 34.0, "dataStatus": "demo_replay"},
+    {"locationId": "DELHI", "variableId": "temperature", "leadHours": 24, "validTime": "2026-09-23T12:00:00Z", "modelId": "ai_graphcast", "forecast": 34.1, "observed": 34.0, "dataStatus": "demo_replay"},
+
+    {"locationId": "DELHI", "variableId": "wind_speed", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ncmrwf_ncum", "forecast": 24.5, "observed": 22.0, "dataStatus": "demo_replay"},
+    {"locationId": "DELHI", "variableId": "wind_speed", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ncmrwf_neps", "forecast": 22.8, "observed": 22.0, "dataStatus": "demo_replay"},
+    {"locationId": "DELHI", "variableId": "wind_speed", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ai_graphcast", "forecast": 23.5, "observed": 22.0, "dataStatus": "demo_replay"},
+
+    {"locationId": "MUMBAI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ncmrwf_ncum", "forecast": 75.0, "observed": 70.0, "dataStatus": "demo_replay"},
+    {"locationId": "MUMBAI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ncmrwf_neps", "forecast": 82.0, "observed": 70.0, "dataStatus": "demo_replay"},
+    {"locationId": "MUMBAI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ai_graphcast", "forecast": 67.0, "observed": 70.0, "dataStatus": "demo_replay"},
+
+    {"locationId": "MUMBAI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-24T12:00:00Z", "modelId": "ncmrwf_ncum", "forecast": 95.0, "observed": 90.0, "dataStatus": "demo_replay"},
+    {"locationId": "MUMBAI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-24T12:00:00Z", "modelId": "ncmrwf_neps", "forecast": 105.0, "observed": 90.0, "dataStatus": "demo_replay"},
+    {"locationId": "MUMBAI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-24T12:00:00Z", "modelId": "ai_graphcast", "forecast": 88.0, "observed": 90.0, "dataStatus": "demo_replay"},
+
+    {"locationId": "MUMBAI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-23T12:00:00Z", "modelId": "ncmrwf_ncum", "forecast": 45.0, "observed": 42.0, "dataStatus": "demo_replay"},
+    {"locationId": "MUMBAI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-23T12:00:00Z", "modelId": "ncmrwf_neps", "forecast": 52.0, "observed": 42.0, "dataStatus": "demo_replay"},
+    {"locationId": "MUMBAI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-23T12:00:00Z", "modelId": "ai_graphcast", "forecast": 40.0, "observed": 42.0, "dataStatus": "demo_replay"},
+
+    {"locationId": "KOLKATA", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ncmrwf_ncum", "forecast": 35.0, "observed": 32.0, "dataStatus": "demo_replay"},
+    {"locationId": "KOLKATA", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ncmrwf_neps", "forecast": 39.0, "observed": 32.0, "dataStatus": "demo_replay"},
+    {"locationId": "KOLKATA", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ai_graphcast", "forecast": 31.0, "observed": 32.0, "dataStatus": "demo_replay"},
+
+    {"locationId": "CHENNAI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ncmrwf_ncum", "forecast": 23.0, "observed": 20.0, "dataStatus": "demo_replay"},
+    {"locationId": "CHENNAI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ncmrwf_neps", "forecast": 27.0, "observed": 20.0, "dataStatus": "demo_replay"},
+    {"locationId": "CHENNAI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ai_graphcast", "forecast": 19.0, "observed": 20.0, "dataStatus": "demo_replay"},
+
+    {"locationId": "GUWAHATI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ncmrwf_ncum", "forecast": 54.0, "observed": 50.0, "dataStatus": "demo_replay"},
+    {"locationId": "GUWAHATI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ncmrwf_neps", "forecast": 62.0, "observed": 50.0, "dataStatus": "demo_replay"},
+    {"locationId": "GUWAHATI", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ai_graphcast", "forecast": 47.0, "observed": 50.0, "dataStatus": "demo_replay"},
+
+    {"locationId": "BHUBANESWAR", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ncmrwf_ncum", "forecast": 47.0, "observed": 45.0, "dataStatus": "demo_replay"},
+    {"locationId": "BHUBANESWAR", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ncmrwf_neps", "forecast": 54.0, "observed": 45.0, "dataStatus": "demo_replay"},
+    {"locationId": "BHUBANESWAR", "variableId": "rainfall", "leadHours": 24, "validTime": "2026-09-25T12:00:00Z", "modelId": "ai_graphcast", "forecast": 42.0, "observed": 45.0, "dataStatus": "demo_replay"}
+  ]
+}

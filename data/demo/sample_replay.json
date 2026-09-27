@@ -1,0 +1,239 @@
+{
+  "system_info": {
+    "project": "Hybrid AI–NWP Multi-Model Forecast Blending System",
+    "organization": "Ministry of Earth Sciences (MoES) / NCMRWF",
+    "data_mode": "demo_replay",
+    "notice": "DEMO/REPLAY MODE: Step 1 shell verification data. Not live operational NCMRWF data."
+  },
+  "models": [
+    {
+      "source_id": "ncmrwf_ncum",
+      "source_name": "NCMRWF NCUM (Global NWP)",
+      "model_type": "nwp_deterministic",
+      "resolution": "12km Global",
+      "data_status": "demo_replay"
+    },
+    {
+      "source_id": "ncmrwf_neps",
+      "source_name": "NCMRWF NEPS (Ensemble NWP)",
+      "model_type": "nwp_ensemble",
+      "resolution": "12km Ensemble (11 Members)",
+      "data_status": "demo_replay"
+    },
+    {
+      "source_id": "ai_graphcast",
+      "source_name": "AI Weather Model (Deep Learning)",
+      "model_type": "ai_ml",
+      "resolution": "0.25deg Lat-Lon",
+      "data_status": "demo_replay"
+    },
+    {
+      "source_id": "demo_replay",
+      "source_name": "Historical Replay Test Stream",
+      "model_type": "demo_replay",
+      "resolution": "Regional Sandbox",
+      "data_status": "demo_replay"
+    }
+  ],
+  "forecasts": [
+    {
+      "source_id": "ncmrwf_ncum",
+      "source_name": "NCMRWF NCUM (Global NWP)",
+      "model_type": "nwp_deterministic",
+      "forecast_time": "2026-09-26T00:00:00Z",
+      "issue_time": "2026-09-26T03:00:00Z",
+      "valid_time": "2026-09-26T12:00:00Z",
+      "latitude": 28.61,
+      "longitude": 77.20,
+      "variable": "temperature_2m",
+      "lead_time": 12,
+      "value": 305.15,
+      "unit": "K",
+      "ensemble": null,
+      "data_status": "demo_replay",
+      "metadata": {
+        "dataset_type": "DEMO/REPLAY SAMPLE",
+        "grid_point": "New Delhi Region"
+      }
+    },
+    {
+      "source_id": "ncmrwf_neps",
+      "source_name": "NCMRWF NEPS (Ensemble NWP)",
+      "model_type": "nwp_ensemble",
+      "forecast_time": "2026-09-26T00:00:00Z",
+      "issue_time": "2026-09-26T03:30:00Z",
+      "valid_time": "2026-09-26T12:00:00Z",
+      "latitude": 28.61,
+      "longitude": 77.20,
+      "variable": "temperature_2m",
+      "lead_time": 12,
+      "value": 304.85,
+      "unit": "K",
+      "ensemble": {
+        "member_id": "neps_mean",
+        "total_members": 11,
+        "percentile": 50.0,
+        "std_dev": 0.65
+      },
+      "data_status": "demo_replay",
+      "metadata": {
+        "dataset_type": "DEMO/REPLAY SAMPLE"
+      }
+    },
+    {
+      "source_id": "ai_graphcast",
+      "source_name": "AI Weather Model (Deep Learning)",
+      "model_type": "ai_ml",
+      "forecast_time": "2026-09-26T00:00:00Z",
+      "issue_time": "2026-09-26T01:00:00Z",
+      "valid_time": "2026-09-26T12:00:00Z",
+      "latitude": 28.61,
+      "longitude": 77.20,
+      "variable": "temperature_2m",
+      "lead_time": 12,
+      "value": 305.40,
+      "unit": "K",
+      "ensemble": null,
+      "data_status": "demo_replay",
+      "metadata": {
+        "dataset_type": "DEMO/REPLAY SAMPLE"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "observation_id": "OBS_DELHI_001",
+      "timestamp": "2026-09-26T12:00:00Z",
+      "latitude": 28.61,
+      "longitude": 77.20,
+      "variable": "temperature_2m",
+      "value": 305.00,
+      "unit": "K",
+      "source": "DEMO_REPLAY_AWS",
+      "quality_flag": "passed",
+      "metadata": {
+        "note": "Demo/Replay ground truth observation"
+      }
+    }
+  ],
+  "model_health": [
+    {
+      "source_id": "ncmrwf_ncum",
+      "freshness": "on_schedule",
+      "availability": 1.0,
+      "latency": 45.2,
+      "missing_data": false,
+      "anomaly_status": "normal",
+      "health_status": "demo_replay",
+      "last_successful_update": "2026-09-26T03:00:00Z",
+      "metadata": {
+        "notice": "Step 1 UI Shell Indicator - Demo Replay Mode"
+      }
+    },
+    {
+      "source_id": "ncmrwf_neps",
+      "freshness": "on_schedule",
+      "availability": 0.95,
+      "latency": 62.0,
+      "missing_data": false,
+      "anomaly_status": "normal",
+      "health_status": "demo_replay",
+      "last_successful_update": "2026-09-26T03:30:00Z",
+      "metadata": {
+        "notice": "Step 1 UI Shell Indicator - Demo Replay Mode"
+      }
+    },
+    {
+      "source_id": "ai_graphcast",
+      "freshness": "on_schedule",
+      "availability": 1.0,
+      "latency": 12.4,
+      "missing_data": false,
+      "anomaly_status": "normal",
+      "health_status": "demo_replay",
+      "last_successful_update": "2026-09-26T01:00:00Z",
+      "metadata": {
+        "notice": "Step 1 UI Shell Indicator - Demo Replay Mode"
+      }
+    }
+  ],
+  "model_weights": [
+    {
+      "source_id": "ncmrwf_ncum",
+      "weight": 0.34,
+      "reason": "Step 1 Baseline Equal Weight Placeholder (Static 1/3 split)",
+      "calculated_at": "2026-09-26T11:00:00Z",
+      "variable": "temperature_2m",
+      "lead_time": 12,
+      "metadata": {
+        "engine": "step1_placeholder_baseline"
+      }
+    },
+    {
+      "source_id": "ncmrwf_neps",
+      "weight": 0.33,
+      "reason": "Step 1 Baseline Equal Weight Placeholder (Static 1/3 split)",
+      "calculated_at": "2026-09-26T11:00:00Z",
+      "variable": "temperature_2m",
+      "lead_time": 12,
+      "metadata": {
+        "engine": "step1_placeholder_baseline"
+      }
+    },
+    {
+      "source_id": "ai_graphcast",
+      "weight": 0.33,
+      "reason": "Step 1 Baseline Equal Weight Placeholder (Static 1/3 split)",
+      "calculated_at": "2026-09-26T11:00:00Z",
+      "variable": "temperature_2m",
+      "lead_time": 12,
+      "metadata": {
+        "engine": "step1_placeholder_baseline"
+      }
+    }
+  ],
+  "verification": [
+    {
+      "source_id": "ncmrwf_ncum",
+      "region": "PAN_INDIA",
+      "variable": "temperature_2m",
+      "lead_time": 24,
+      "season": "MONSOON",
+      "weather_regime": "MONSOON_TROUGH",
+      "metric": "RMSE",
+      "score": 1.42,
+      "verification_period": "DEMO_HISTORICAL_RUN",
+      "metadata": {
+        "notice": "Historical evaluation metric placeholder"
+      }
+    },
+    {
+      "source_id": "ncmrwf_neps",
+      "region": "PAN_INDIA",
+      "variable": "temperature_2m",
+      "lead_time": 24,
+      "season": "MONSOON",
+      "weather_regime": "MONSOON_TROUGH",
+      "metric": "RMSE",
+      "score": 1.28,
+      "verification_period": "DEMO_HISTORICAL_RUN",
+      "metadata": {
+        "notice": "Historical evaluation metric placeholder"
+      }
+    },
+    {
+      "source_id": "ai_graphcast",
+      "region": "PAN_INDIA",
+      "variable": "temperature_2m",
+      "lead_time": 24,
+      "season": "MONSOON",
+      "weather_regime": "MONSOON_TROUGH",
+      "metric": "RMSE",
+      "score": 1.35,
+      "verification_period": "DEMO_HISTORICAL_RUN",
+      "metadata": {
+        "notice": "Historical evaluation metric placeholder"
+      }
+    }
+  ]
+}
