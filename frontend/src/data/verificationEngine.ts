@@ -12,8 +12,7 @@
  * All metrics derive from the DEMO/REPLAY verification dataset.
  * No random data, no fabricated claims.
  */
-
-import { VERIFICATION_DATASET, type VerificationRecordPoint } from './calibrationEngine';
+import { VERIFICATION_DATASET } from './calibrationEngine';
 
 // ──────────────────────────────────────────────────────────────
 // Constants
